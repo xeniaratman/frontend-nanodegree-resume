@@ -4,6 +4,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color:#554b3f;
+
+}
+
 .clearfix {
   overflow: auto;
 }
@@ -14,45 +22,47 @@
 }
 
 h1 {
-  font-size: 40px;
-  color: #F5A623;
-  line-height: 48px;
+  font-family: 'Damion', cursive;
+  font-size: 65px;
+  font-weight: 400;
+  color: #94d3da;
+  line-height: 80px;
   display: inline;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999999;
-  line-height: 29px;
+  font-family: 'Damion', cursive;
+  font-size: 45px;
+  font-weight: 400;
+  color: #daac6d;
+  line-height: 45px;
   padding: 10px;
 }
 
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000000;
+  color: #554b3f;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4A4A4A;
+  color: #554b3f;
   line-height: 17px;
 }
 
-h2, h3, h4, h5 {
+h2, h4, h5 {
   padding:10px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
+  color: #daac6d;
   line-height: 16px;
   float: left;
 }
@@ -60,63 +70,77 @@ h2, h3, h4, h5 {
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
+  color: #daac6d;
   line-height: 16px;
   float: right;
-
 }
 
 p {
   font-size: 14px;
-  color: #333333;
+  color: #554b3f;
   line-height: 21px;
 }
 
 a {
-  color: #1199C3;
   text-decoration: none;
+  color: #554b3f;
   margin-top: 10px;
   display: block;
 }
 
+hr {
+  margin-bottom: 10px;
+}
+
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
-  color: #F3F3F3;
-  line-height: 28px;
+  font-size: 20px;
+  color: #f2ebce;
+  line-height: 30px;
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #94d3da;
   display: none;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+#skills {
+  margin-bottom: 15px;
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #c8d586;
 }
 
-.orange-text {
-  color: #F5AE23;
+.blue-text {
+  color: #eba871;
 }
 
-.white-text {
-  font-weight: bold;
-  color: #FFFFFF;
+.off-white-text {
+
+  color: #f2ebce;
 }
 
-.gray {
-  background-color: #F3F3F3;
+.green {
+  background-color: #d2df8e;
   padding-bottom: 10px;
   clear:both;
 }
 
-.dark-gray {
-  background-color: #4A4A4A;
+.off-white {
+  background-color: #f2ebce;
+}
+
+.brown {
+  background-color: #554b3f;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  min-width: 500px;
+  background-color:#554b3f;
 }
 
 .flex-box {
@@ -153,7 +177,7 @@ img {
 /* Bar chart stuff */
 .chart div {
   font: 10px sans-serif;
-  background-color: #4A4A4A;
+  background-color: #554b3f;
   text-align: right;
   padding: 3px;
   margin: 1px;
@@ -162,12 +186,75 @@ img {
   display: inline-block;
 }
 
-span {
-  padding: 5px;
+.icon {
+  color: #f2ebce;
+  display: inline-block;
+}
+
+.role {
+  color: #f2ebce;
+  padding: 20px;
 }
 
 #letsConnect {
   text-align: center;
+  color: #f2ebce;
+}
+
+#footerContacts {
+  font-size: 35px;
+  color: #f2ebce;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?3b83gw');
+  src:url('fonts/icomoon.eot?#iefix3b83gw') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3b83gw') format('truetype'),
+    url('fonts/icomoon.woff?3b83gw') format('woff'),
+    url('fonts/icomoon.svg?3b83gw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus3:before {
+  content: "\e600";
+}
+.icon-facebook3:before {
+  content: "\e601";
+}
+.icon-twitter3:before {
+  content: "\e602";
+}
+.icon-github:before {
+  content: "\e603";
+}
+
+
+
+
+@media only screen and (min-width: 810px) {
+.headerDecor {
+  height: 50px;
+  background-color:#554b3f;
+  background-image: url("images/header_small.jpg");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+}
 }
 
 @media only screen and (max-width: 1024px) {
